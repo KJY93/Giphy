@@ -1,0 +1,13 @@
+<h1 class="header-metadata">Search result for: {{ searchTerm }}</h1>
+
+<div id="img-container">
+    {{#each filteredResult}}
+        <div>
+            <img src={{ this.[0] }} alt={{ this.[1] }} />
+        </div>
+    {{/each}}
+</div>
+
+<div id="return-link">
+    Click <a href="/"><strong>HERE</strong></a> to go back to the main page!
+</div>

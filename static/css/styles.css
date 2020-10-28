@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Gochi Hand', cursive, 'Sans-Serif';
+    background-image: url('/images/layout-bg.jpg');
+    max-height: 90vh;
+}
+
+#img-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#return-link {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.header-metadata {
+    text-align: center;
+}
+
+input, .button-container {
+    margin-top: 22px;
+}
+
+form {
+    text-align: center;
+}
