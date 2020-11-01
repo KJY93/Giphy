@@ -1,11 +1,15 @@
 <h1 class="header-metadata">Search result for: {{ searchTerm }}</h1>
 
 <div id="img-container">
-    {{#each filteredResult}}
-        <div>
-            <img src={{ this.[0] }} alt={{ this.[1] }} />
-        </div>
-    {{/each}}
+    {{#if hasContent}}
+        {{#each filteredResult}}
+            <div>
+                <img src={{ this.[0] }} alt={{ this.[1] }} />
+            </div>
+        {{/each}}
+    {{else}}
+        <h3>Sorry! No result found!</h3>
+    {{/if}}    
 </div>
 
 <div id="return-link">

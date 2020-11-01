@@ -70,6 +70,7 @@ app.get('/search', async (req, res) => {
         res.render('giphy', {
             searchTerm: searchTerm,
             filteredResult: filteredResult, 
+            hasContent: !!filteredResult.length, // filteredResult.length > 0(alternative way)
         })
     }
     // catch block to handle errors
