@@ -1,4 +1,4 @@
-# FSD-003
+# Giphy
 
 ### Introduction
 This is an application developed using Express that enables the user to search for animated GIF files
